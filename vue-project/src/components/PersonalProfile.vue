@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lou's Personal Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9ff; 
+            color: #2c3e50; 
+        }
+
+        header {
+            background-color: #1e3a8a; 
+            color: #fcd34d; 
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            background-color: #ffffff; 
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        .section h2 {
+            color: #1e3a8a; 
+        }
+
+        .profile-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fcd34d; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background-color: #1e3a8a; 
+            color: #fcd34d; 
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #fcd34d; 
+            color: #1e3a8a; 
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background-color: #ffd700; 
+        }
+
+        .gallery img {
+            border: 3px solid #fcd34d; 
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Profile</h1>
+    </header>
+
+    <div class="container">
+        <div class="profile-image">
+            <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="Profile Picture  style="width:250px; height:250px;">
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hi! My name is Lou. I'm passionate about technology and am constantly exploring new ways to grow and learn in the field.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education & Achievements</h2>
+            <ul>
+                <li>Certificate of Recognition - Honor Student (2023-2024)</li>
+                <li>Graduated from Asia Pacific College [Senior High School]</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Database Management</li>
+                <li>Programming (HTML, CSS, JavaScript)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Reading and watching technology content</li>
+                <li>Playing video games</li>
+                <li>Basketball</li>
+                <li>Working out</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Goals</h2>
+            <p>My dream is to achieve stability in life—mentally, financially, and physically.</p>
+        </div>
+
+        <div class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                 <img src="https://th.bing.com/th/id/R.4c23a7f0d575b3c6465302930ed28acf?rik=YhkK4apDdpjt6w&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwc1754120.jpg&ehk=782IVCbAU1freSHIj%2fZQIe5%2bTQCtaBmBOv4U9suN9RQ%3d&risl=&pid=ImgRaw&r=0" alt="Basketball" style="width:300px; height:200px; margin-right: 10px;">
+                <img src="Bball-court.jpg" alt="Bball-court"style="width:200px;height:200px;">
+                 <img src="Bball.jpg" alt="Bball"style="width:300px;height:200px;">
+                <img src="https://fadeawayworld.net/.image/c_limit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_700/MTkyOTUwMjU0MTg0NzAzMTk3/fotojet---2022-10-11t145824801.jpg">
+               
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Lou's Profile | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

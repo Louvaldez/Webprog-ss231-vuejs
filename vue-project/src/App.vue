@@ -3,7 +3,7 @@
   <food-item/> <br>
   <food-item2/> <br>
   <food-item/> <br>
-
+  <food-item2/> <br>
 </template>
 
 <script></script>
